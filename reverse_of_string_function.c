@@ -5,13 +5,11 @@ int reverseString(char str[])
     while (str[length] != '\0') {
         length++; // Calculate the length of the string
     }
-    
     char reversed[length + 1]; // Create a new array to hold the reversed string
     for (int i = 0; i < length; i++) {
         reversed[i] = str[length - 1 - i]; // Fill the reversed array
     }
     reversed[length] = '\0'; // Null-terminate the reversed string
-    
     printf("The reverse of \"%s\" is \"%s\".\n", str, reversed);
     return 0;
 }
@@ -29,8 +27,6 @@ int main() {
         }
         length++;
     }
-    
     reverseString(str); // Call the function to reverse the string
-    
     return 0;
 }
